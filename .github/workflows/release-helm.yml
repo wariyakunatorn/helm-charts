@@ -78,7 +78,7 @@ jobs:
 
       - name: Test helm upgrade
         run: |
-          helm repo add rocketchat https://rocketchat.github.io/helm-charts
+          helm repo add rocketchat https://wariyakunatorn.github.io/helm-charts
           helm install --set mongodb.auth.username=rocketchat,mongodb.auth.password=testpass,mongodb.auth.database=rocketchat,mongodb.auth.rootPassword=root-testpass test-upgrade-rocketchat rocketchat/rocketchat
           echo waiting for pod to be created
           sleep 80
